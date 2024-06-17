@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>  <script src="script.js"></script>
+    <div class="container">
+        <header>
+            <img src="tic-tac-toe.png" alt="Tic-Tac-Toe Icon" class="icon">
+            <div style="color: rgb(0, 61, 48); font-size: 20px;">
+                <h1>Tic-Tac-Toe</h1>
+                <h2>Think Outside the box</h2>
+            </div>
+        </header>
+        <div class="turn-indicator">
+            <p>Current Turn: <span id="current-player">X</span></p>
+        </div>
+        <div class="board" id="board"></div>
+        <button id="reset">Reset Game</button>
+        <p id="message"></p>
+        <div class="leaderboard" style="background-color: rgb(77, 193, 162);">
+            <h3>Leaderboard</h3>
+            <p>Player 1 (X): <span id="player1-score">0</span></p>
+            <p>Player 2 (O): <span id="player2-score">0</span></p>
+            <button id="reset-scores">Reset Scores</button>
+        </div>
+        <div class="board-size">
+            <label for="board-size" style="background-color: rgb(77, 193, 162);">Board Size:</label>
+            <select id="board-size">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+            </select>
+        </div>
+        <div class="modal" id="reset-modal">
+            <div class="modal-content">
+                <p>Are you sure you want to reset the current game?</p>
+                <button id="confirm-reset">Yes, Reset</button>
+                <button id="cancel-reset">Cancel</button>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
+
